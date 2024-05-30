@@ -96,7 +96,7 @@ elif [ "$ANALYSIS" = "pole_analysis" ]; then
     USECASES="loading_scenario critical_speed worst_angle"
     RESULT_NAME="results"
     POLE_OPTION=""
-    if [[ -n "$POLE_NAME" ]]; then
+    if [ -n "$POLE_NAME" ]; then
         POLE_OPTION="--poles_selected=pole_$POLE_NAME"
         POLE_NAME="$POLE_NAME\_"
     fi
